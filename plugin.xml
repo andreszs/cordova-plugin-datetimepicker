@@ -9,13 +9,14 @@
     <keywords></keywords>
     <repo>https://github.com/alex-pl/cordova-plugin-datetimepicker</repo>
     <issue>https://github.com/alex-pl/cordova-plugin-datetimepicker/issues</issue>
+	
+	<!-- Globally available JS file -->
+    <js-module name="DateTimePicker" src="www/DateTimePicker.js">
+        <clobbers target="cordova.plugins.DateTimePicker"/>
+    </js-module>
 
     <!-- android -->
     <platform name="android">
-        <js-module src="www/plugin.js" name="plugin">
-            <runs/>
-            <clobbers target="DateTimePicker"/>
-        </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="DateTimePicker">
                 <param name="android-package" value="com.alexanderploner.datetimepicker.DateTimePicker"/>
@@ -28,6 +29,18 @@
         <source-file src="src/android/picker/BasePickerFragment.java" target-dir="src/com/alexanderploner/datetimepicker/picker/"/>
         <source-file src="src/android/picker/DatePickerFragment.java" target-dir="src/com/alexanderploner/datetimepicker/picker/"/>
         <source-file src="src/android/picker/TimePickerFragment.java" target-dir="src/com/alexanderploner/datetimepicker/picker/"/>
+    </platform>
+	
+	<!-- browser -->
+    <platform name="browser">
+        <config-file target="config.xml" parent="/*">
+            <feature name="DateTimePicker">
+                <param name="browser-package" value="DateTimePicker" />
+            </feature>
+        </config-file>
+		<js-module src="src/browser/PluginProxy.js" name="DateTimePickerProxy">
+			<runs />
+		</js-module>
     </platform>
 
 </plugin>
