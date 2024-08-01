@@ -1,6 +1,6 @@
 ![npm](https://img.shields.io/npm/dt/cordova-plugin-datetimepicker) ![npm](https://img.shields.io/npm/v/cordova-plugin-datetimepicker) ![GitHub package.json version](https://img.shields.io/github/package-json/v/alex-pl/cordova-plugin-datetimepicker?color=FF6D00&label=master&logo=github) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/alex-pl/cordova-plugin-datetimepicker) ![GitHub top language](https://img.shields.io/github/languages/top/alex-pl/cordova-plugin-datetimepicker) ![GitHub last commit](https://img.shields.io/github/last-commit/alex-pl/cordova-plugin-datetimepicker)
 
-# Platforms
+## Platforms
 
 - Android
 - Browser
