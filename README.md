@@ -1,3 +1,4 @@
+![npm](https://img.shields.io/npm/dt/cordova-plugin-datetimepicker) ![npm](https://img.shields.io/npm/v/cordova-plugin-datetimepicker) ![GitHub package.json version](https://img.shields.io/github/package-json/v/alex-pl/cordova-plugin-datetimepicker?color=FF6D00&label=master&logo=github) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/alex-pl/cordova-plugin-datetimepicker) ![GitHub top language](https://img.shields.io/github/languages/top/alex-pl/cordova-plugin-datetimepicker) ![GitHub last commit](https://img.shields.io/github/last-commit/alex-pl/cordova-plugin-datetimepicker)
 
 # Platforms
 
@@ -7,7 +8,7 @@
 ## Installation
 
 ```sh
-cordova plugins add https://github.com/andreszs/cordova-plugin-datetimepicker
+cordova plugins add cordova-plugin-datetimepicker
 ```
 
 ## Usage
@@ -30,7 +31,9 @@ The following screenshots were made on a device with Android 6.0. The plugin use
 
 <img src="https://alex-pl.github.io/cordova-plugin-datetimepicker/images/screenshot_date.png" alt="Date Picker" width="200px">   <img src="https://alex-pl.github.io/cordova-plugin-datetimepicker/images/screenshot_time.png" alt="Time Picker" width="200px">
 
-## Fork changes
+## Changelog
+
+#### v2.0.0
 
 - Added the browser platform (for date selection only)
 - Plugin methods moved from `window` to `cordova.plugins`.
